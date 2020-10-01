@@ -53,14 +53,14 @@ y_pred = classifier.predict(X_test)
 
 y_pred = (y_pred > 0.5)
 
-result=[]
+resultnew=[]
 for i in range(len(y_pred)):
     if y_pred[i][0] == False:
         result.append('n')
     else:
         result.append('y')
         
-result = pd.DataFrame(result, columns=['Output'])
+resultnew = pd.DataFrame(result, columns=['Output'])
 
 
 
